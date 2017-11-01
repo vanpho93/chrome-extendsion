@@ -1,0 +1,18 @@
+Bước 1.
+Viết code listen fox
+
+// Câu hỏi: Làm sao biết khi nào có tin mới?
+// Làm sao biết đâu là lệnh nhồi?
+// Làm sao biết lệnh thắng thua?
+
+Bước 2.
+Xử lý server.
+
+Bước 3.
+React app
+
+Bước 4.
+Chrome extension
+
+// Làm sao lưu đăng nhập
+// Làm sao chạy background script

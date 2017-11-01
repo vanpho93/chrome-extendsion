@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <script src="jquery.js"></script>
+    <script src="b.js"></script>
+  </head>
+  <body>
+    <section class="demo-fox">
+      <section class="container spaciado-tele">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center section-trade object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="100" id="NoTradeActual" style="display: block; padding-bottom: 30px;">
+          <p class="moneda texto-blanco" "="">WAITING FOR NEW SIGNAL...</p>
+          <i class="fa text-default fa-spinner fa-4x fa-pulse"></i>
+                                    <div id="highNews"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center section-trade object-non-visible animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="100" id="TradingTime" style="display:none; padding-bottom:30px;">
+          <p class="moneda texto-blanco">NO SIGNALS <i class="fa text-default fa-clock-o "></i></p>
+          <p class="moneda texto-blanco" style="font-size:25px">Trading time: 1:00 to 20:00 UTC/GMT</p>		
+          <p class="moneda texto-blanco" style="font-size:25px">from Monday to Friday</p>														
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 spaciado-tele section-trade animated object-visible fadeIn" data-animation-effect="fadeIn" data-effect-delay="100" id="tradeActual" style="display: none">
+          <p class="" id="signaltype"></p>
+          <div class="col-xs-11 col-sm-11 col-md-9 col-lg-7 position float-de mergin-te">
+            <div class="col-xs-12">
+              <p class="time" id="time">Mon, 30 Oct 2017 08:54:39 GMT</p>
+            </div>
+            <div class="col-xs-6 spa-le">
+              <div class="spa_line">
+                <p class="texto-blanco">ASSET</p>
+                <p class="moneda" id="AssetActual"></p>
+              </div>															
+              <div class="col-xs-4 spa-line2 ">
+                <p class="texto-blanco">ENTRY PRICE</p>
+                <p class="texto-blanco tama" id="EntryPrice"></p>
+              </div>
+              <div class="col-xs-4 spa-line2 padin">
+                <p class="texto-blanco">EXPIRACY</p>
+                <p class="texto-blanco  tama" id="Expiracy"></p>
+              </div>
+              <div class="col-xs-4 spa-line2 padin2">
+                <p class="texto-blanco">DIRECTION</p>
+                <p class="texto-verde tama" id="Direction"></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xs-1 col-sm-1 col-md-3 col-lg-5 contador">
+            <div class="circles">
+              <div class="second circle circle2">
+                <strong> </strong>
+                <span class="priceactual" id="CurrentPrice" style="margin-top:-38px; bottom:124px;">0.99885</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

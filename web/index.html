@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Client</title>
+    <script src="jquery.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script>
+    var socket = io("http://localhost:3000");
+
+    socket.on("19p58T04D8K7-sv-send-new-sig", function(data){
+      alert(data.id);
+      $("#S_id").html(data.id);
+      $("#S_sure").html(data.group);
+      $("#S_date").html(data.date);
+      $("#S_asset").html(data.asset);
+      $("#S_piceopen").html(data.entry);
+      $("#S_direction").html(data.direction);
+      $("#S_exp").html(data.expirary);
+      $("#S_min").html(data.second);
+    });
+
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>id:           <span id="S_id">1</span></li>
+      <li>Sure:         <span id="S_sure">1</span></li>
+      <li>Date:         <span id="S_date">1</span></li>
+      <li>Asset:        <span id="S_asset">1</span></li>
+      <li>Price open:   <span id="S_piceopen">1</span></li>
+      <li>Direction:    <span id="S_direction">1</span></li>
+      <li>Expirary:     <span id="S_exp">1</span></li>
+      <li>Minute:       <span id="S_min">1</span></li>
+    </ul>
+  </body>
+</html>

@@ -5,10 +5,11 @@
     "content_scripts": [
         {
           "matches": [
-            "<all_urls>"
+            "https://foxbinarysignals.com/live-signals"
           ],
           "js": [
               "jquery.js",
+              "socket.js",
               "content.js"
             ]
         }
